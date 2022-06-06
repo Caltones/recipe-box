@@ -1,0 +1,15 @@
+#root {
+  text-align: center;
+  width: 100vw;
+  background-color: #e3f2fd;
+  min-height: 100vh;
+  overflow: hidden;
+}
+body{
+  margin: 0px;
+}
+.width{
+  width: 100vw;
+}
+
+
