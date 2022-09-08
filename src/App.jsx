@@ -95,6 +95,7 @@ function App() {
           startIcon={<AddIcon />}
           variant="contained"
           onClick={handleOpen}
+          size="large"
         >
           Add
         </Button>
@@ -242,6 +243,7 @@ function App() {
                   fullWidth
                   label="Ingredients"
                   placeholder="Ingredients:"
+                  
                 ></TextField>
               )}
               renderTags={renderingTags()}
@@ -287,7 +289,7 @@ function App() {
   function renderingTags() {
     return (value, getTagProps) =>
       value.map((option, index) => (
-        <Chip variant="outlined" label={option} {...getTagProps({ index })} />
+        <Chip key={index} variant="outlined" label={option} {...getTagProps({ index })} />
       ));
   }
 }
